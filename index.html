@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
+
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>MELİSAXSLOW ♥ DADDYXSLOW</title>
+
 <link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
-<video autoplay muted loop id="bgVideo">
-<source src="assets/video.mp4">
+<!-- Background Video -->
+<video autoplay muted loop playsinline id="bgVideo">
+<source src="assets/video.mp4" type="video/mp4">
+Tarayıcınız video desteklemiyor.
 </video>
 
+<!-- Overlay -->
 <div class="overlay"></div>
 
+<!-- Canvas Effects -->
 <canvas id="matrix"></canvas>
 <canvas id="particles"></canvas>
 <canvas id="cursor"></canvas>
 
+<!-- Background Music -->
 <audio id="music" loop>
-<source src="assets/music.mp3">
+<source src="assets/music.mp3" type="audio/mpeg">
 </audio>
 
-<div class="centerBox">
-<h1 id="title"></h1>
-<p id="loveText"></p>
-<button onclick="secret()">MELİSAXSLOW ♥ DADDYXSLOW</button>
-</div>
+<!-- Main Content -->
+<main class="centerBox">
+
+<h1 id="title">MELİSAXSLOW</h1>
+
+<p id="loveText">
+Forever together ♥
+</p>
+
+<button id="loveBtn" onclick="secret()">
+MELİSAXSLOW ♥ DADDYXSLOW
+</button>
+
+</main>
 
 <script src="script.js"></script>
+
 </body>
 </html>
